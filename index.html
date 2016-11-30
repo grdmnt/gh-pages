@@ -12,17 +12,34 @@
              font-family: 'Montserrat', sans-serif !important;
              color: #333 !important;
          }
+         .footer {
+             display: absolute;
+             bottom: 0;
+             width: 100vw;
+             text-align: center;
+             display: none;
+         }
         </style>
 	</head>
 	<body>
 		<div class="ui middle aligned grid" style="height: 100vh; width: 100vw;">
             <div class="row center aligned">
                 <div class="column">
-                    <div class="ui header" style="font-size: 36px;">UP Diliman's Source of Innovation
+                    <div class="ui header" style="font-size: 36px; display: none;">UP Diliman's Source of Innovation
                         <div class="sub header">Coming soon</div>
                     </div>
                 </div>
             </div>
 		</div>
+        <div class="footer">From the creators of <a href="http://crswatch.peioris.me" style="color: #777;">CRS Watch<a></div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="transition.min.js"></script>
+         <script>
+            $('.ui.header').transition('fade up', 1000);
+            setTimeout(function(){
+                $('.footer').transition('fade', 1000);    
+            }, 1000)
+            
+        </script>
 	</body>
 </html>
