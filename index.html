@@ -7,10 +7,20 @@
         <style>
          body {
              font-family: 'Montserrat', sans-serif !important;
+             /*background: url('shattered_@2X.png');*/
          }
          .ui.header {
              font-family: 'Montserrat', sans-serif !important;
              color: #333 !important;
+         }
+         .border {
+             border-style: solid;
+             border-width: 5px;
+             padding-top: 10px !important;
+             padding-bottom: 25px;
+             padding-left: 10px;
+             padding-right: 10px;
+             border-color: #680A2B;
          }
          .footer {
              display: fixed;
@@ -18,19 +28,27 @@
              width: 100%;
              text-align: center;
          }
+         .red {
+             color: #680a2B !important;
+             border-color:#680a2B !important;
+         }
         </style>
 	</head>
 	<body>
 		<div class="ui middle aligned grid" style="height: 96vh; width: 100vw; margin: 0;">
             <div class="row">
                 <div class="column center aligned" style="padding: 0">
-                    <div class="ui header" style="font-size: 36px; display: none;">UP Diliman's Source of Innovation
+                    <div class="ui header" style="font-size: 36px; display: none;"><span class="">UP Diliman's Source of Innovation</span>
+                        
+                        <div class="ui divider text container"></div>
                         <div class="sub header">Coming soon</div>
                     </div>
+                    
                 </div>
             </div>
 		</div>
-        <div class="footer">From the creators of <span id="crswatch" ><a href="http://crswatch.peioris.me" style="color: #777;">CRS Watch<a></span></div>
+        <div class="footer">
+            From the creators of <span id="crswatch" ><a href="http://crswatch.peioris.me" style="color: #777;">CRS Watch<a></span></div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="transition.min.js"></script>
          <script>
